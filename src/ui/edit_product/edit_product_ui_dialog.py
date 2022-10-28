@@ -108,9 +108,8 @@ class EditProductUiDialog(QtWidgets.QDialog):
             number = int(text)
         except:
             pass
-        self.product.stock = str(number + 1)
-
-        self.stock_lineEdit.setText(self.product.stock)
+        
+        self.stock_lineEdit.setText(str(number + 1))
 
     def onStockMinusClick(self):
         text = self.stock_lineEdit.text()
@@ -119,9 +118,8 @@ class EditProductUiDialog(QtWidgets.QDialog):
             number = int(text)
         except:
             pass
-        self.product.stock = str(number - 1)
 
-        self.stock_lineEdit.setText(self.product.stock)
+        self.stock_lineEdit.setText(str(number - 1))
 
     def makeProductByInput(self) -> Product:
         return Product(
