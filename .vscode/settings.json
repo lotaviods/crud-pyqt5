@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./project_naka"
+    ],
+    "python.analysis.typeCheckingMode": "basic"
+}
